@@ -25,11 +25,13 @@ namespace HattVidly.Controllers
             };
         }
 
-        // GET: Movies Random
-        public ActionResult Random()
+        public ActionResult Details(int id)
         {
-            var movie = new Movie() { Name = "Shrek!" };
-            return View(movie);
+            var Movie = GetMovies().SingleOrDefault(m => m.Id == id);
+            if (Movie != null)
+                return View(Movie);
+
+            return HttpNotFound();
         }
 
         public ActionResult Edit(int id)
