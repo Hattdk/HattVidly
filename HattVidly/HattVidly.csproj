@@ -212,6 +212,26 @@
     <Compile Include="Migrations\201701250800562_AddMembershipType.Designer.cs">
       <DependentUpon>201701250800562_AddMembershipType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701250811575_RetryAddCustomerModel.cs" />
+    <Compile Include="Migrations\201701250811575_RetryAddCustomerModel.Designer.cs">
+      <DependentUpon>201701250811575_RetryAddCustomerModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701250825165_AddedToIdentityModels.cs" />
+    <Compile Include="Migrations\201701250825165_AddedToIdentityModels.Designer.cs">
+      <DependentUpon>201701250825165_AddedToIdentityModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701250829151_AddedToIdentityModels1.cs" />
+    <Compile Include="Migrations\201701250829151_AddedToIdentityModels1.Designer.cs">
+      <DependentUpon>201701250829151_AddedToIdentityModels1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701250829537_AddDataToMembershipTypes.cs" />
+    <Compile Include="Migrations\201701250829537_AddDataToMembershipTypes.Designer.cs">
+      <DependentUpon>201701250829537_AddDataToMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701250838402_populateMigrationTypes.cs" />
+    <Compile Include="Migrations\201701250838402_populateMigrationTypes.Designer.cs">
+      <DependentUpon>201701250838402_populateMigrationTypes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -310,6 +330,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701250800562_AddMembershipType.resx">
       <DependentUpon>201701250800562_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701250811575_RetryAddCustomerModel.resx">
+      <DependentUpon>201701250811575_RetryAddCustomerModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701250825165_AddedToIdentityModels.resx">
+      <DependentUpon>201701250825165_AddedToIdentityModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701250829151_AddedToIdentityModels1.resx">
+      <DependentUpon>201701250829151_AddedToIdentityModels1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701250829537_AddDataToMembershipTypes.resx">
+      <DependentUpon>201701250829537_AddDataToMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701250838402_populateMigrationTypes.resx">
+      <DependentUpon>201701250838402_populateMigrationTypes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
