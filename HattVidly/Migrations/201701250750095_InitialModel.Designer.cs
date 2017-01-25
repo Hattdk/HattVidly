@@ -13,7 +13,7 @@ namespace HattVidly.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201701170718318_InitialModel"; }
+            get { return "201701250750095_InitialModel"; }
         }
         
         string IMigrationMetadata.Source
