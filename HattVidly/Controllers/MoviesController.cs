@@ -9,32 +9,45 @@ namespace HattVidly.Controllers
 {
     public class MoviesController : Controller
     {
+        private ApplicationDbContext _context;
+
+        public MoviesController()
+        {
+            _context = new ApplicationDbContext();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
+
 
         public ViewResult Index()
         {
-            var movies = GetMovies();
+            var movies = _context.Movies;
             return View(movies);
         }
 
-        private IEnumerable<Movie> GetMovies()
+        public ActionResult Details(int id)
         {
-            return new List<Movie>
-            {
-                new Movie { Id = 1, Name = "Shrek!" },
-                new Movie { Id = 2, Name = "Wall-e" }
-            };
-        }
+            var movie = _context.Movies.SingleOrDefault(c => c.Id == id);
 
-        // GET: Movies Random
-        public ActionResult Random()
-        {
-            var movie = new Movie() { Name = "Shrek!" };
+            if (movie == null)
+            {
+                return HttpNotFound();
+            }
+
             return View(movie);
         }
 
-        public ActionResult Edit(int id)
-        {
-            return Content("id=" + id);
-        }
+        //private IEnumerable<Movie> GetMovies()
+        //{
+        //    return new List<Movie>
+        //    {
+        //        new Movie { Id = 1, Name = "Shrek!" },
+        //        new Movie { Id = 2, Name = "Wall-e" }
+        //    };
+        //}
+        
     }
 }
