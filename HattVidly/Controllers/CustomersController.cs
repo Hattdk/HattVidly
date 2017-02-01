@@ -24,7 +24,7 @@ namespace HattVidly.Controllers
 
         public ViewResult Index()
         {
-            var customers = _context.Customers;
+            var customers = _context.Customers.Include(m => m.MembershipType);
             return View(customers);
         }
 
