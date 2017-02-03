@@ -220,6 +220,10 @@
     <Compile Include="Migrations\201702030638300_populate_more.Designer.cs">
       <DependentUpon>201702030638300_populate_more.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702032057558_fixed_starting_counter_for_insert.cs" />
+    <Compile Include="Migrations\201702032057558_fixed_starting_counter_for_insert.Designer.cs">
+      <DependentUpon>201702032057558_fixed_starting_counter_for_insert.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -324,6 +328,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702030638300_populate_more.resx">
       <DependentUpon>201702030638300_populate_more.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702032057558_fixed_starting_counter_for_insert.resx">
+      <DependentUpon>201702032057558_fixed_starting_counter_for_insert.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
