@@ -7,13 +7,13 @@ namespace HattVidly.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class fixed_customer_membershiptype : IMigrationMetadata
+    public sealed partial class model_making : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(fixed_customer_membershiptype));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(model_making));
         
         string IMigrationMetadata.Id
         {
-            get { return "201702012324160_fixed_customer_membershiptype"; }
+            get { return "201702030548584_model_making"; }
         }
         
         string IMigrationMetadata.Source

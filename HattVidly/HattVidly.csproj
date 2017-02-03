@@ -204,41 +204,26 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201701170718318_InitialModel.cs" />
-    <Compile Include="Migrations\201701170718318_InitialModel.Designer.cs">
-      <DependentUpon>201701170718318_InitialModel.cs</DependentUpon>
+    <Compile Include="Migrations\201702030523436_init.cs" />
+    <Compile Include="Migrations\201702030523436_init.Designer.cs">
+      <DependentUpon>201702030523436_init.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702012219146_identity_models.cs" />
-    <Compile Include="Migrations\201702012219146_identity_models.Designer.cs">
-      <DependentUpon>201702012219146_identity_models.cs</DependentUpon>
+    <Compile Include="Migrations\201702030548584_model_making.cs" />
+    <Compile Include="Migrations\201702030548584_model_making.Designer.cs">
+      <DependentUpon>201702030548584_model_making.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702012220144_populate_MembershipTypes.cs" />
-    <Compile Include="Migrations\201702012220144_populate_MembershipTypes.Designer.cs">
-      <DependentUpon>201702012220144_populate_MembershipTypes.cs</DependentUpon>
+    <Compile Include="Migrations\201702030602043_populate.cs" />
+    <Compile Include="Migrations\201702030602043_populate.Designer.cs">
+      <DependentUpon>201702030602043_populate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201702012247488_added_entity_and_context.cs" />
-    <Compile Include="Migrations\201702012247488_added_entity_and_context.Designer.cs">
-      <DependentUpon>201702012247488_added_entity_and_context.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702012309094_populate_moves_users_membershiptypes.cs" />
-    <Compile Include="Migrations\201702012309094_populate_moves_users_membershiptypes.Designer.cs">
-      <DependentUpon>201702012309094_populate_moves_users_membershiptypes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702012324160_fixed_customer_membershiptype.cs" />
-    <Compile Include="Migrations\201702012324160_fixed_customer_membershiptype.Designer.cs">
-      <DependentUpon>201702012324160_fixed_customer_membershiptype.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702012328599_fix_customers_table.cs" />
-    <Compile Include="Migrations\201702012328599_fix_customers_table.Designer.cs">
-      <DependentUpon>201702012328599_fix_customers_table.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201702012330042_add_customers_correct.cs" />
-    <Compile Include="Migrations\201702012330042_add_customers_correct.Designer.cs">
-      <DependentUpon>201702012330042_add_customers_correct.cs</DependentUpon>
+    <Compile Include="Migrations\201702030638300_populate_more.cs" />
+    <Compile Include="Migrations\201702030638300_populate_more.Designer.cs">
+      <DependentUpon>201702030638300_populate_more.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -328,29 +313,17 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201701170718318_InitialModel.resx">
-      <DependentUpon>201701170718318_InitialModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702030523436_init.resx">
+      <DependentUpon>201702030523436_init.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702012219146_identity_models.resx">
-      <DependentUpon>201702012219146_identity_models.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702030548584_model_making.resx">
+      <DependentUpon>201702030548584_model_making.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702012220144_populate_MembershipTypes.resx">
-      <DependentUpon>201702012220144_populate_MembershipTypes.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702030602043_populate.resx">
+      <DependentUpon>201702030602043_populate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702012247488_added_entity_and_context.resx">
-      <DependentUpon>201702012247488_added_entity_and_context.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702012309094_populate_moves_users_membershiptypes.resx">
-      <DependentUpon>201702012309094_populate_moves_users_membershiptypes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702012324160_fixed_customer_membershiptype.resx">
-      <DependentUpon>201702012324160_fixed_customer_membershiptype.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702012328599_fix_customers_table.resx">
-      <DependentUpon>201702012328599_fix_customers_table.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201702012330042_add_customers_correct.resx">
-      <DependentUpon>201702012330042_add_customers_correct.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702030638300_populate_more.resx">
+      <DependentUpon>201702030638300_populate_more.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

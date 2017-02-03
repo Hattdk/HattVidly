@@ -7,29 +7,33 @@
 }
 
 <h2>Movies</h2>
-<table class="table table-bordered table-hover">
+@if (Model == null)
+{
+    <div>There is no data </div>
+}
+else
+{
 
-    <thead>
-
-        <tr>
-
-            <th>Customers</th>
-            <th>Membership Type</th>
-
-        </tr>
-
-    </thead>
-
-    <tbody>
-        @foreach (var customer in Model)
-        {
+    <table class="table table-bordered table-hover">
+        <thead>
             <tr>
-                <td>@Html.ActionLink(@customer.Name, "Details", "Customers", new { id = @customer.Id }, null)</td>
-                @*<td>@Html.ActionLink(@customer.Name, "Details", "MembershipType", new { id = @customer.Id }, null)</td>*@
-                <td>@customer.MembershipType.Name</td>
+                <th>Customers</th>
+                <th>Membership Type Id</th>
+                <th>Membership Type</th>
             </tr>
-        }
+        </thead>
 
-    </tbody>
+        <tbody>
+            @foreach (var customer in Model)
+            {
+                <tr>
+                    <td>@Html.ActionLink(@customer.Name, "Details", "Customers", new { id = @customer.Id }, null)</td>
+                    <td>@customer.MembershipTypeId</td>
+                    <td>@customer.MembershipType.Name</td>
+                </tr>
+            }
 
-</table>
+        </tbody>
+
+    </table>
+}

@@ -7,13 +7,13 @@ namespace HattVidly.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class InitialModel : IMigrationMetadata
+    public sealed partial class populate_more : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialModel));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(populate_more));
         
         string IMigrationMetadata.Id
         {
-            get { return "201701170718318_InitialModel"; }
+            get { return "201702030638300_populate_more"; }
         }
         
         string IMigrationMetadata.Source
