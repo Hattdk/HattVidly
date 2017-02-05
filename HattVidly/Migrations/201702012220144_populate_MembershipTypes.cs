@@ -9,6 +9,7 @@ namespace HattVidly.Migrations
         {
             Sql("insert into MembershipTypes(Name) values('Pay as you go')");
             Sql("insert into MembershipTypes(Name) values('Monthly')");
+            Sql("insert into MembershipTypes(Name) values('Quarterly')");
             Sql("insert into MembershipTypes(Name) values('Annual')");
         }
         
